@@ -1,0 +1,25 @@
+{
+  "name": "iverson-budget",
+  "version": "1.0.0",
+  "description": "Personal budget tracker - Ride the wave to financial freedom",
+  "main": "dev-server.js",
+  "scripts": {
+    "dev": "node dev-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanneri1/Iverson-Budget.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tanneri1/Iverson-Budget/issues"
+  },
+  "homepage": "https://github.com/tanneri1/Iverson-Budget#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

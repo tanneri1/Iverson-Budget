@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal budget tracker - Ride the wave to financial freedom">
+    <meta name="theme-color" content="#0D7377">
+    <title>Iverson Budget</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1F30A;</text></svg>">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app" class="app">
+        <!-- Auth View -->
+        <div id="auth-view" class="auth-container hidden">
+            <div class="auth-card">
+                <div class="auth-logo">&#x1F30A;</div>
+                <h1 class="auth-title">Iverson Budget</h1>
+                <p class="auth-subtitle">Ride the wave to financial freedom</p>
+
+                <form id="auth-form">
+                    <div class="form-group">
+                        <label class="form-label" for="auth-email">Email</label>
+                        <input type="email" id="auth-email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="auth-password">Password</label>
+                        <input type="password" id="auth-password" class="form-input" required minlength="6">
+                    </div>
+                    <button type="submit" id="auth-submit" class="btn btn-primary btn-block btn-lg">
+                        Sign In
+                    </button>
+                </form>
+
+                <p class="auth-footer">
+                    <span id="auth-toggle-text">Don't have an account?</span>
+                    <a href="#" id="auth-toggle">Sign up</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Main App View -->
+        <div id="main-view" class="hidden">
+            <header class="header">
+                <div class="header-content">
+                    <a href="#/" class="logo">
+                        <span class="logo-icon">&#x1F30A;</span>
+                        <span>Iverson Budget</span>
+                    </a>
+                    <div class="user-menu">
+                        <span id="user-name" class="user-name"></span>
+                        <button id="logout-btn" class="btn btn-secondary btn-sm">Log out</button>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#/" class="nav-link" data-page="dashboard">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#/income" class="nav-link" data-page="income">
+                            <span>Income</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#/expenses" class="nav-link" data-page="expenses">
+                            <span>Expenses</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#/savings" class="nav-link" data-page="savings">
+                            <span>Savings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#/profile" class="nav-link" data-page="profile">
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main id="page-content" class="main">
+                <!-- Page content loaded here by router -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

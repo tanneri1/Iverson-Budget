@@ -1,8 +1,8 @@
 // Supabase Client Configuration
-// Uses the same Supabase project as the triathlon tracker
+// Iverson Budget project
 
-const SUPABASE_URL = 'https://ffdbrcutxysxntrfbmya.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmZGJyY3V0eHlzeG50cmZibXlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk2NjA1MDgsImV4cCI6MjA4NTIzNjUwOH0._cjPIJFFMAFvmg1oY6UvbtkFNkFlg1x3WX8KsWMvP6w';
+const SUPABASE_URL = 'https://lmzgfmkrqolgwbcixuuq.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_026GqkGFWq6OMTOtYegmVQ_ieFdsxI3';
 
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
